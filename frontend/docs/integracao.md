@@ -115,3 +115,10 @@ A antiga lista foi substituída pelo mesmo LotCard da Dashboard, em3/2/1colunas.
 Busca, situação, data-base e ordem atuam em resumos dos IDs locais. Não foi criado GET de listagem, nem há varredura de notas. Data-base desconhecida não usa a data de envio como substituta. Consulta pendente não equivale a processamento; concluído sem aprovadas é Analisado. Valores de cessão prevalecem na ordenação; desconhecidos ficam por último e zero é preservado.
 
 Conferidos busca/filtros/reset, teclado, vazio, modal de envio e retorno do exemplo; desktop1440, tablet1024 e celular360. Os cards mantêm163px nos exemplos e permitem crescimento para badges maiores. Avisos agregados evitam esconder falhas de consulta em filtros; limpar devolve foco à busca.53testes e builds normal/demo aprovados. A limitação anterior de IDs mock antigos entre abas continua fora deste ajuste; nenhum dado foi apagado para ocultá-la. API Go e Docker continuam sem validação real disponível.
+
+
+## Perfil no lugar das regras públicas
+
+A navegação do usuário passou a `/perfil`; `/regras` redireciona, e os links da ajuda/landing foram ajustados. A gestão das regras e a senha do gestor permanecem existentes. Nenhuma autorização do backend foi modificada. Perfil demo usa dados fictícios em sessionStorage, uma lista explícita de campos permitidos e nenhuma senha persistida/enviada. Logout remove o acesso demo e a senha do gestor. No modo Go, perfil tem estado não configurado.
+
+Conferidos no navegador: salvar/recuperar nome após reload, pausa do mascote por preferência, validação e conclusão da troca demonstrativa, confirmação de logout até o login e retorno ao perfil. Desktop com grade1280px e celular360px sem overflow; rota antiga redirecionando corretamente, sem erros de execução.69testes aprovados, incluindo armazenamento inválido/bloqueado e descarte de campos de credenciais; TypeScript/lint e builds aprovados.

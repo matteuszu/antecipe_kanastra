@@ -149,3 +149,10 @@ O conteúdo resume envio CSV, análise, motivos de recusa e confirmação da ces
 A página reutiliza os cards e o botão verde Novo envio da Dashboard. Busca por nome, arquivo, ID ou data-base; situação; data-base exata e ordenação por envio ou maior valor líquido. Os campos seguem os inputs do login Figma, com60px e raio24px. Filtros complementares abrem pelo botão Filtros, sem perder valores ao recolher.
 
 A coleção continua sendo o histórico dos últimos100 envios deste navegador; os filtros operam sobre os resumos já consultados, sem buscar notas nem inventar uma rota de listagem. Resumos indisponíveis mantêm nova tentativa; dados em cache preservam o último valor. A grade tem3/2/1colunas e os cards crescem para acomodar contagens maiores.
+
+
+## Meu perfil
+
+A navegação do usuário oferece Meu perfil em `/perfil`, com dados fictícios editáveis, preferências de movimento e confirmação de saída. O endereço antigo `/regras` redireciona para o perfil; a configuração das regras continua em `/gestor`. A ajuda e a landing não oferecem mais o link público para regras. Os endpoints do contrato permanecem inalterados.
+
+No modo demo, os dados são salvos apenas na sessão do navegador. Alterar senha é uma simulação identificada: os campos são descartados ao fechar e nunca são enviados ou persistidos. Reduzir animações pausa os vídeos e reduz movimentos; sair limpa o marcador da demo e a senha do gestor, preservando os lotes. No modo conectado, o perfil mostra um estado de conta ainda não configurada, sem inventar endpoints de login/perfil.
